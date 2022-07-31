@@ -1,0 +1,125 @@
+.wrapper {
+  justify-content: center;
+  align-items: center;
+  border: #555 solid 5px;
+  border-radius: 10px;
+  width: 900px;
+  height: 700px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 141, 0.448);
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 40%;
+  width: 100px;
+  height: 50px;
+}
+.worker {
+  width: 50px; /* 
+  margin-left: 450px; */
+}
+.social-icons {
+  width: 200px;
+}
+
+img {
+  height: 400px;
+}
+
+.social-icons li a {
+  /*  position: relative; */
+  /* display: block; */
+  width: 80px;
+  height: 80px;
+  color: #555;
+  background: #fff;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgb(0 0 0 / 50%);
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+}
+/* .clear {
+  clear: both;
+} */
+
+.social-icons li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b2b2b2;
+  transition: 0.5s;
+  transform: skewY(-45deg);
+}
+.social-icons li a::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #e5e5e5;
+  transition: 0.5s;
+  transform: skewX(-45deg);
+}
+.social-icons li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+.social-icons li:hover .fa {
+  color: #fff;
+}
+.social-icons li:hover:nth-child(1) a {
+  background-color: #3b5999;
+}
+.social-icons li:hover:nth-child(1) a::before {
+  background-color: #2f4772;
+}
+.social-icons li:hover:nth-child(1) a::after {
+  background-color: #2f4772;
+}
+.social-icons li:hover:nth-child(2) a {
+  background-color: #ff015a;
+}
+.social-icons li:hover:nth-child(2) a::before {
+  background-color: #920637;
+}
+.social-icons li:hover:nth-child(2) a::after {
+  background-color: #b9003e;
+}
+.social-icons li:hover:nth-child(3) a {
+  background-color: #3b5999;
+}
+.social-icons li:hover:nth-child(3) a::before {
+  background-color: #2f4772;
+}
+.social-icons li:hover:nth-child(3) a::after {
+  background-color: #4e69a3;
+}
+.social-icons li:hover:nth-child(4) a {
+  background-color: #ed3f00;
+}
+.social-icons li:hover:nth-child(4) a::before {
+  background-color: #b63908;
+}
+.social-icons li:hover:nth-child(4) a::after {
+  background-color: #b73805;
+}
+.social-icons li:hover:nth-child(5) a {
+  background-color: #3b5999;
+}
+.social-icons li:hover:nth-child(5) a::before {
+  background-color: #2f4772;
+}
+.social-icons li:hover:nth-child(5) a::after {
+  background-color: #4e69a3;
+}
